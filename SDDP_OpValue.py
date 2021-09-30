@@ -14,15 +14,18 @@ This is a temporary script file.
 ### Update 1.000
 
 
-
+# ----------------------------------------------------------------------------------
+# import initial libraries
+import pandas as pd; from datetime import date; import time
 
 
 #-----------------------------------------------------------------------------------
 # Call data
-import pandas as pd
-print('$$$$$$$$$$$$     Discretizador de la demanda determinístico     $$$$$$$$$$$$')
+print('$$$$$$$$$$$$     Generation and transmission Expantion planning     $$$$$$$$$$$$')
+today = date.today().strftime("%d/%m/%Y")
+print('                 ',date.today() ,'  ',time.strftime("%X"))
 print("")
-print("- Inicia etapa de lectura de datos de demanda y factores de planta")
+print(time.strftime("%X"), "- Start calling data from the network to analyze")
 DB = pd.read_excel("14 bus data.xlsx", sheet_name=None)
-print("- Finaliza etapa de lectura de datos")
+print(time.strftime("%X"), "- End of data readinng")
 
