@@ -20,4 +20,9 @@ This is a temporary script file.
 #-----------------------------------------------------------------------------------
 # Call data
 import pandas as pd
+print('$$$$$$$$$$$$     Discretizador de la demanda determinístico     $$$$$$$$$$$$')
+print("")
+print("- Inicia etapa de lectura de datos de demanda y factores de planta")
 DB = pd.read_excel("14 bus data.xlsx", sheet_name=None)
+print("- Finaliza etapa de lectura de datos")
+
